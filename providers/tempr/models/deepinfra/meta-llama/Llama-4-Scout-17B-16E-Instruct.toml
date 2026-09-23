@@ -1,0 +1,11 @@
+base_model = "meta/llama-4-scout-17b-instruct"
+name = "Llama 4 Scout 17B"
+structured_output = true
+
+[cost]
+input = 0.1
+output = 0.3
+
+[limit]
+context = 327_680
+output = 16_384
