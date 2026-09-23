@@ -1,0 +1,16 @@
+# Tempr Gateway: https://temprhq.io/docs/gateway-chat-completions#reasoning
+# No caller control on Tempr: Tempr forwards no reasoning settings to this host at
+# all. It routes each model to whichever upstream provider serves it, and those providers
+# disagree -- most of its models have more than one, and every reasoning model does, so
+# there is no deterministic behaviour to expose (checked live 2026-09-20).
+base_model = "moonshotai/kimi-k2.6"
+name = "Kimi-K2.6"
+release_date = "2026-04-20"
+last_updated = "2026-04-20"
+
+reasoning_options = []
+
+[cost]
+input = 0.95
+output = 4.0
+cache_read = 0.16

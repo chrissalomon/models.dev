@@ -1,0 +1,12 @@
+base_model = "alibaba/qwen3-next-80b-a3b-instruct"
+name = "Qwen3-Next-80B-A3B-Instruct"
+release_date = "2025-09-11"
+last_updated = "2025-09-11"
+
+[cost]
+input = 0.25
+output = 1.0
+
+[limit]
+context = 262_144
+output = 66_536

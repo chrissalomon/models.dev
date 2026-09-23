@@ -1,0 +1,23 @@
+# Tempr Gateway: https://temprhq.io/docs/gateway-chat-completions#reasoning
+# No caller control on Tempr: Tempr forwards no reasoning settings to this host at
+# all. It routes each model to whichever upstream provider serves it, and those providers
+# disagree -- most of its models have more than one, and every reasoning model does, so
+# there is no deterministic behaviour to expose (checked live 2026-09-20).
+base_model = "alibaba/qwen3.5-397b-a17b"
+name = "Qwen3.5-397B-A17B"
+release_date = "2026-02-01"
+last_updated = "2026-02-01"
+
+reasoning_options = []
+
+[cost]
+input = 0.60
+output = 3.60
+
+[limit]
+context = 262_144
+output = 32_768
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
