@@ -1,0 +1,16 @@
+# Tempr Gateway: https://temprhq.io/docs/gateway-chat-completions#reasoning
+# Effort: reasoning.effort = low|medium|high|xhigh|max (alias: top-level reasoning_effort)
+# /v1/messages: output_config.effort = low|medium|high|xhigh|max
+# /v1/responses: reasoning.effort = low|medium|high|xhigh|max
+base_model = "anthropic/claude-opus-5-5"
+name = "Claude Opus 5.5 (US)"
+
+reasoning_options = [
+  { type = "effort", values = ["low", "medium", "high", "xhigh", "max"] },
+]
+
+[cost]
+input = 4.4
+output = 22
+cache_read = 0.22
+cache_write = 5.5
