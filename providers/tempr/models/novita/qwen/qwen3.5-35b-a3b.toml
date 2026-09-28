@@ -1,0 +1,19 @@
+# Tempr Gateway: https://temprhq.io/docs/gateway-chat-completions#reasoning
+# Toggle: reasoning.enabled = true|false (reasoning.effort = "none" also turns it off)
+# /v1/messages: thinking.type = enabled|disabled
+# /v1/responses: reasoning.effort = "none" turns it off, any other level turns it on
+base_model = "alibaba/qwen3.5-35b-a3b"
+name = "Qwen3.5-35B-A3B"
+release_date = "2026-02-26"
+last_updated = "2026-02-26"
+
+reasoning_options = [
+  { type = "toggle" },
+]
+
+[cost]
+input = 0.25
+output = 2.0
+
+[modalities]
+input = ["text", "image", "video"]

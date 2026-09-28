@@ -1,0 +1,18 @@
+# Tempr Gateway: https://temprhq.io/docs/gateway-chat-completions#reasoning
+# No reasoning control for this model on this host: it reasons at its own depth,
+# and the x-tempr-reasoning-effort response header reports "default".
+base_model = "alibaba/qwen3-235b-a22b"
+name = "Qwen3 235B A22B"
+release_date = "2025-04-29"
+last_updated = "2025-04-29"
+tool_call = false
+
+reasoning_options = []
+
+[cost]
+input = 0.2
+output = 0.8
+
+[limit]
+context = 40_960
+output = 20_000

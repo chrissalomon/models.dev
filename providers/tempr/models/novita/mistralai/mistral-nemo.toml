@@ -1,0 +1,13 @@
+base_model = "mistral/mistral-nemo"
+release_date = "2024-07-30"
+last_updated = "2024-07-30"
+tool_call = false
+structured_output = true
+
+[cost]
+input = 0.04
+output = 0.17
+
+[limit]
+context = 60_288
+output = 16_000
