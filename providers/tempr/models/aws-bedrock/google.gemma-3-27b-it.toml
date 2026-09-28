@@ -1,0 +1,10 @@
+base_model = "google/gemma-3-27b-it"
+tool_call = false
+structured_output = true
+
+[cost]
+input = 0.23
+output = 0.38
+
+[limit]
+output = 8_192
