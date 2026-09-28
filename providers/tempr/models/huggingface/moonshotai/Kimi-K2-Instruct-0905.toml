@@ -1,0 +1,5 @@
+base_model = "moonshotai/kimi-k2-instruct-0905"
+
+[cost]
+input = 1
+output = 3

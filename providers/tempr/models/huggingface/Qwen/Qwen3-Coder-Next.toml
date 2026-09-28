@@ -1,0 +1,6 @@
+base_model = "alibaba/qwen3-coder-next"
+name = "Qwen3-Coder-Next"
+
+[cost]
+input = 0.20
+output = 1.50
