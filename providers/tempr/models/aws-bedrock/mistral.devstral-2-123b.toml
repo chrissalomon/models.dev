@@ -1,0 +1,10 @@
+base_model = "mistral/devstral-2512"
+name = "Devstral 2 123B"
+structured_output = true
+
+[cost]
+input = 0.40
+output = 2.00
+
+[limit]
+output = 8_192
