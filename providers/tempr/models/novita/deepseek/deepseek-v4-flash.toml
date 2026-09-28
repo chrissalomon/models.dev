@@ -1,0 +1,20 @@
+# Tempr Gateway: https://temprhq.io/docs/gateway-chat-completions#reasoning
+# Toggle: reasoning.enabled = true|false (reasoning.effort = "none" also turns it off)
+# Effort: reasoning.effort = none|minimal|low|medium|high|xhigh (alias: top-level reasoning_effort)
+# /v1/messages: thinking.type = enabled|disabled; output_config.effort = minimal|low|medium|high|xhigh
+# /v1/responses: reasoning.effort = none|minimal|low|medium|high|xhigh
+base_model = "deepseek/deepseek-v4-flash"
+
+reasoning_options = [
+  { type = "toggle" },
+  { type = "effort", values = ["minimal", "low", "medium", "high", "xhigh"] },
+]
+
+[cost]
+input = 0.14
+output = 0.28
+cache_read = 0.028
+
+[limit]
+context = 1_048_576
+output = 393_216
